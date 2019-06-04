@@ -1,0 +1,12 @@
+<h6>  2 Select Protocol</h6>
+  <ul>
+    <ng-container *ngFor="let currProtocol of protocolList">
+      <li>
+        <mat-checkbox 
+            [(ngModel)]="currProtocol.isChecked"
+            (change)="checklistChanged($event.checked,currProtocol.name)">
+          {{currProtocol.name}}
+        </mat-checkbox>
+      </li>
+    </ng-container>
+  </ul>

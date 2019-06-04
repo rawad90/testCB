@@ -1,0 +1,12 @@
+<h6>3 Select Time period</h6>
+<ul>
+    <ng-container *ngFor="let currtimeperiod of timePeriodList">
+      <li>
+        <mat-checkbox 
+            [(ngModel)]="currtimeperiod.isChecked"
+            (change)="checklistChanged($event.checked,currtimeperiod.name)">
+          {{currtimeperiod.name}}
+        </mat-checkbox>
+      </li>
+    </ng-container>
+  </ul>

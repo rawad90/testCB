@@ -1,0 +1,12 @@
+<h6>  1 Select blackboxes</h6>
+<ul>
+  <ng-container *ngFor="let currDeviceGroup of deviceGroupList">
+    <li>
+      <mat-checkbox 
+          [(ngModel)]="currDeviceGroup.isChecked"
+          (change)="checklistChanged($event.checked,currDeviceGroup.name)">
+        {{currDeviceGroup.name}}
+      </mat-checkbox>
+    </li>
+  </ng-container>
+</ul>

@@ -1,0 +1,31 @@
+<h3>Summary</h3>
+
+Devices :
+<ul>
+    <li *ngFor="let deviceGroup of deviceGroupList">
+      <div>
+        {{deviceGroup.name}}
+      </div>
+    </li>
+  </ul>
+  
+Protocols:
+<ul>
+  <li *ngFor="let protocol of protocolList">
+    <div>
+      {{protocol.name}}
+    </div>
+  </li>
+</ul>
+
+Time periods:
+<ul>
+    <li *ngFor="let timePeriod of timerPeriodList">
+      <div>
+        {{timePeriod.name}}
+      </div>
+    </li>
+  </ul>
+
+
+<button>Start learning</button>
